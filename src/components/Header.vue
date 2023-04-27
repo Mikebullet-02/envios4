@@ -4,7 +4,7 @@
       class="bg-inherit py-5 px-6 sm:py-5 sm:px-16 lg:py-16 lg:px-48 text-start text-neutral-800"
     >
       <h1
-        class="sm:mb-5 text-[#003368] text-4xl sm:text-6xl md:text-6xl font-bold blue:bg-neutral-700 sm:pl-[30px] md:pl-[30px] lg:pl-[-30px] xl:ml-[10px] tracking-widest ease-in duration-500"
+        class="sm:mb-5 text-[#003368] text-3xl sm:text-6xl md:text-6xl lg:text-5xl font-bold blue:bg-neutral-700 sm:pl-[30px] md:pl-[30px] lg:pl-[-30px] xl:ml-[10px] tracking-widest ease-in duration-500"
       >
         AHORRA HASTA 60% EN
         <p>LOGÍSTICA PARA TU</p>
@@ -12,7 +12,7 @@
       </h1>
       <div class="mx-auto max-w-[900px] ml-5 sm:ml-20">
         <ul
-          class="list-disc flex flex-col space-y-2 py-5 sm:pt-5 pb-5 text-lg sm:text-2xl text-gray-800"
+          class="list-disc flex flex-col space-y-2 py-5 sm:pt-5 pb-5 text-lg sm:text-2xl md:text-3xl text-gray-800"
         >
           <li>Tarifas preferenciales para empresas</li>
           <li>

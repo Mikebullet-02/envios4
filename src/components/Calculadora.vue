@@ -9,7 +9,7 @@
           <img
             src="../assets/Calculadora.webp"
             onerror="this.src='../assets/Calculadora.png'"
-            class="h-80 w-80 sm:w-96 sm:h-80"
+            class="h-72 w-72 sm:w-80 sm:h-90"
             alt="CajaCalculadora"
           />
         </div>

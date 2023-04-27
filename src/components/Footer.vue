@@ -1,7 +1,7 @@
 <template>
   <section class="bg-[#003368]">
     <div
-      class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8"
+      class="max-w-screen-xl px-4 py-10 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8"
     >
       <nav class="flex flex-wrap justify-center -mx-5 -my-2">
         <div class="px-5 py-2">
@@ -40,9 +40,9 @@
       <img
         src="../assets/logoblanco.webp"
         alt="Logo"
-        class="w-80 h-28 mx-auto"
+        class="w-60 h-24 mx-auto"
       />
-      <div class="flex justify-center mt-8 space-x-6">
+      <div class="flex justify-center mt-5 space-x-6">
         <a href="#" class="text-white hover:text-neutral-600">
           <span class="sr-only">Facebook</span>
           <svg

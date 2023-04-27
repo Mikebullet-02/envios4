@@ -33,6 +33,7 @@
             src="../assets/ODMenvios.webp"
             onerror="this.src='../assets/ODMenvios.png'"
             class="w-48 2xl:mr-[150px]"
+            alt="Logo ODM envios"
           />
           <Links />
         </ul>
@@ -50,6 +51,7 @@
             onerror="this.src='../assets/ODMenvios.png'"
             class="sm:hidden w-full p-8"
             :class="showMenu ? 'flex' : 'hidden'"
+            alto="Logo ODM envios"
           />
           <ul
             :class="

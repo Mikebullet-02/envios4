@@ -246,30 +246,45 @@ const handleSubmit = () => {
 
   console.log(data);
 
-  fetch(
-    "https://t4ck3obt4yljbevi3ldeuxklhu0wvmlk.lambda-url.us-east-1.on.aws/default/correos",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    }
-  )
-    .then((response) => response.text())
-    .then((result) => {
-      url.value = "";
-      telefono.value = "";
-      empresa.value = "";
-      ciudad.value = "";
-      email.value = "";
-      selectedOption.value = "";
-      console.log(result);
-      alert(result);
-    })
-    .catch((error) => {
-      console.log(error);
-      alert("An error occurred while sending the email.");
-    });
+  // create a new instance of PHPMailer
+  const mail = new PHPMailer();
+
+  // configure the SMTP settings
+  mail.isSMTP();
+  mail.Host = "smtp.gmail.com";
+  mail.Port = 587;
+  mail.SMTPAuth = true;
+  mail.Username = "your_gmail_address@gmail.com";
+  mail.Password = "your_gmail_password";
+  mail.SMTPSecure = "tls";
+
+  // configure the email message
+  mail.SetFrom("desarrollowebodm@gmail.com", "Desarrollo Web ODM");
+  mail.AddAddress("mauriciodelgado1300@gmail.com", "Miguel Delgado");
+  mail.Subject = "Nuevo Cliente Potencial";
+
+  mail.Body = `
+    Nombre completo: ${url.value}
+    Teléfono: ${telefono.value}
+    Nombre de tu empresa: ${empresa.value}
+    Ciudad: ${ciudad.value}
+    Correo electrónico: ${email.value}
+    Opción seleccionada: ${selectedOption.value}
+  `;
+
+  // send the email
+  try {
+    mail.Send();
+    url.value = "";
+    telefono.value = "";
+    empresa.value = "";
+    ciudad.value = "";
+    email.value = "";
+    selectedOption.value = "";
+    alert("Correo enviado con éxito");
+  } catch (error) {
+    console.error(error);
+    alert("An error occurred while sending the email.");
+  }
 };
 </script>
